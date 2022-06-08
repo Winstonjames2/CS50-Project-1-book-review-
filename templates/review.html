@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+{% block head %}
+<title>Book Review</title>
+{% endblock %}
+{% block body %}
+<div id="user"><div id="name">{{user}}</div><a href="/logout" class="links">Logout</a></div>
+<div class="details">
+    <ul>
+        <li>Title: {{book.title}}</li>
+        <li>Author: {{book.author}}</li>
+        <li>Publication Year: {{book.public_year}}</li>
+        <li>Isbn: {{book.isbn}}</li>
+        <li>Average Rating: {{review.average_rating}}, Reviews Counts: {{review.reviews_count}}</li>
+    </ul>
+</div>
+<div class="heading-sm left">Submit Review</div>
+<form action="{{url_for('submit_review')}}" method="post">
+    <textarea name="reviews" maxlength="100"></textarea>
+    <input type="submit" class="btn" value="Submit">
+</form>
+{% for r_data in review_data %}
+    <div id="r_data">
+        <div id="acc_id">User: {{r_data.acc_id}}</div>
+        <div style="overflow-wrap: break-word;">{{r_data.review}}</div>
+    </div>
+{% endfor %}
+{% endblock %}

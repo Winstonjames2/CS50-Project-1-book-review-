@@ -1,0 +1,139 @@
+#heading{
+    font-size: 2em;
+    text-align: center;
+    color:blue;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin:5px;
+    box-shadow: 1px 1px 1px 1px green;
+}
+.heading-sm{
+    font-size:1.5em;
+    text-align: center;
+    color:green;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 3px;
+}
+.form{
+    text-align: center;
+    top:40%;bottom:40%;left:15%;right: 15%;
+    position: absolute;
+}
+.btn{
+    padding:5px;
+    /* padding-left:8%;padding-right:8%; */
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    color:white;
+    background-color: rgb(1, 168, 9);border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: green;
+}
+#username,#password{
+    font-size: 1em;
+    padding:3px;
+}
+input{
+    outline: none;
+    margin-bottom: 10px;
+    width: auto;
+}
+.message{
+    font-size: 1em;
+    color:white;
+    justify-content: center;
+    text-align:center;
+    display: flex;
+}
+textarea{
+    resize: none;
+    
+}
+.success{
+    background-color: green;
+}
+.fail{
+    background-color: red;
+}
+#user{
+    right:1%;position: absolute;
+    font-size: 1.1em;
+    text-align: center;padding:5px;font-weight: bold;
+    color:white;background-color:brown;box-shadow: 1px 1px 12px 1px rgb(121, 72, 72);
+}
+#name{
+    font-size: 1.2em;padding-bottom:5px;
+}
+.links{
+    color:white;
+    background-color: rgba(64, 124, 109, 0.712);padding:3px;
+}
+#search_box{
+    position:absolute;
+    right:8%;
+    top:45%;bottom:45%;
+}
+#search{
+    font-size: 1.2em;
+}
+.center{
+    display: flex;justify-content: center;align-items: center;
+    margin-top:5%;
+}
+.column1{
+    background-color: rgb(192, 192, 192);
+    width: 50%;
+    height: fit-content;
+}
+th{
+    width: 300px;
+}
+#data{
+    text-align: center;
+    background-color: rgb(172, 172, 172);
+}
+#data:hover{
+    background-color: grey;
+}
+#r_data{
+    color:black;background-color: rgb(192, 192, 192);
+    border-radius: 5px;margin-bottom: 10px;padding:3px;padding-left:5px;padding-right:5px;
+    font-size:1.2em;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.left{
+    text-align:left;margin-bottom:10px;
+}
+textarea{
+    outline:none;
+    border: 1.5px solid green;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    width: 300px;
+    height: 50px;
+}
+#acc_id{
+    font-size: 0.8em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: gray;display: inline;padding:2px;
+}
+.details{
+    font-size: 1.2em;
+    color:green;
+}
+@media screen and (max-width:650px){    
+    .column1{
+        width:fit-content
+    }
+    #search_box{
+        display:block;
+        position: static;
+        align-items: center;justify-content: center;text-align: center;
+    }
+    #user{
+        font-size: 0.5em;
+    }
+}

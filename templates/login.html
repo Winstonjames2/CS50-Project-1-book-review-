@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+    <title>Login</title>
+{% endblock %}
+
+{% block body %}
+    <div class="heading-sm">Login</div>
+    <div class="message fail">{{ message_f }}</div>
+    <form class="form" action="/login" method="post">
+        <input type="text" placeholder="Enter Your Username" name="username" id="username"><br>
+        <input type="password" placeholder="Enter Your Password" name="password" id="password"><br>
+        <button class="btn">Login</button>
+    </form>
+    <div class="center"><a class="links"href="/register">Click Here To SignUp</a></div>
+{% endblock %}

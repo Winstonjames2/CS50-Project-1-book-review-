@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+    <title>Search Books</title>
+{% endblock %}
+{% block body %}
+<div class="heading-sm">SEARCH BOOKS</div>
+<div id="user"><div id="name">{{user}}</div><a href="/logout" class="links">Logout</a></div>
+
+<form id="search_box" action="/search" method="post">
+    <input type="search" id="search" name="isbn" placeholder="ENTER ISBN"><br>
+    <input type="search" id="search" name="title" placeholder="ENTER TITLE"><br>
+    <input type="search" id="search" name="author" placeholder="ENTER AUTHOR">
+    <div  class="center"><input type="submit" class="btn" value="Search"></div>
+</form>
+
+<div class="column1">
+    <div class="heading-sm">SEARCH RESULTS</div>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Public Year</th>
+        </tr>
+        {% for book in books %}
+        <tr id="data">
+            <td><a href="{{ url_for('review',code=book.id)}}">{{book.title}}</a></td>
+            <td>{{book.author}}</td>
+            <td>{{book.public_year}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+<div class="message fail">{{message_f}}</div>
+{% endblock %}
