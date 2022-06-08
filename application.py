@@ -4,7 +4,7 @@ from models import *
 import requests
 
 app=Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"]='postgresql://nbuqpztkyejtia:8bc6f4b9bcd80bfacc004fd9d9b2f3fa2c43944cacdc6f77029e0097ce4b14ab@ec2-52-3-2-245.compute-1.amazonaws.com:5432/d2u1tj44hb629j'
+app.config["SQLALCHEMY_DATABASE_URI"]='--DATABASE URI--'
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"]=False
 app.config["SESSION_PERMANENT"]=False
 app.config["SESSION_TYPE"]="filesystem"
