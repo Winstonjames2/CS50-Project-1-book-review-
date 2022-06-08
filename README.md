@@ -7,5 +7,4 @@
 - To debug on write **'set FLASK_ENV=development'**.
 - To run the application in flask server, **'flask run'**.
 - I used review api from goodreads. 
-- This is not flawless.
 - Thanks for visiting MY SITE.
